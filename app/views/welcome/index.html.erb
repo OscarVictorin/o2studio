@@ -20,11 +20,14 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#services" style="color: white">Servicios</a>
+                    </li> -->
+                    <!-- <li>
+                        <a class="page-scroll" href="#portfolio" style="color: white">Portfolio</a>
+                    </li> -->
                     <li>
                         <a class="page-scroll" href="#services" style="color: white">Servicios</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio" style="color: white">Portfolio</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about" style="color: white">Nosotros</a>
@@ -44,7 +47,7 @@
 
     <!-- Header -->
     <!-- <header style="background-color: #04B4AE"> -->
-    <header style="background-image:url(<%= asset_path 'header-bg.jpg' %>)">
+    <header style="background-image:url(<%= asset_path 'header-bg.png' %>)">
         
         <div class="container">
             <div class="intro-text">
@@ -57,16 +60,12 @@
     </header>
 
     <!-- Services Section -->
-    <section id="services">
+    <!-- <section id="services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Servicios</h2>
-                    <h3 class="section-subheading text-muted">Personalizados para ti</h3>
-                </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <span class="fa-stack fa-4x" >
                         <i class="fa fa-circle fa-stack-2x text-primary" ></i>
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
@@ -74,7 +73,7 @@
                     <h4 class="service-heading">E-Commerce</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
@@ -82,7 +81,7 @@
                     <h4 class="service-heading">Responsive Design</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
@@ -92,10 +91,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
+   <!--  <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -190,15 +189,15 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- About Section -->
-    <section id="about">
+    <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Nuestros servicios</h2>
+                    <h3 class="section-subheading text-muted">Tu sitio web sin restricciones</h3>
                 </div>
             </div>
             <div class="row">
@@ -206,12 +205,12 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="<%= asset_path 'UX.png' %>" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                    <h4>User Experience Design</h4>
+                                    <h4 class="subheading">Hacemos sitios amigables</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -220,12 +219,12 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                <img class="img-circle img-responsive" src="<%= asset_path 'custom.png' %>" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
+                                    <h4>Diseño personalizado</h4>
+                                    <h4 class="subheading">Hacemos un sitio web sólo para ti</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -234,12 +233,12 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                                <img class="img-circle img-responsive" src="<%= asset_path 'update.png' %>" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
+                                    <h4>Flexibilidad en Actualizaciones</h4>
+                                    <h4 class="subheading">No te cobramos por cada imagen que necesites cambiar</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -248,27 +247,32 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                                <img class="img-circle img-responsive" src="<%= asset_path 'phone.png' %>" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                    <h4>Mobile First Design</h4>
+                                    <h4 class="subheading">Hacemos tu sitio 100% responsivo</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
+                       
                     </ul>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Sobre 02 Studio</h2>
+                    <h3 class="section-subheading text-muted">Entendemos porque vivimos tus necesitades</h3>
+            </div>
             </div>
         </div>
     </section>
